@@ -7,6 +7,11 @@ import java.util.List;
 
 public class Solution {
 
+    public static void main(String[] args) {
+        List<String> s = List.of(new String[]{"neet", "code", "love", "you"});
+        System.out.println(Solution.decode(Solution.encode(s)));
+    }
+
     public static String encode(List<String> strs) {
         StringBuilder sb = new StringBuilder();
         for (String str : strs) {
